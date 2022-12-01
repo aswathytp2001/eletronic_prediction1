@@ -24,10 +24,9 @@ def process(form_data):
 
 @app.route('/predict',methods=['POST'])
 def predict():
-  
     df = process(request.form)
     prediction = model.predict(df)[0]
-    return render_template('predict.html', prediction)
+    return render_template('predict.html', prediction=prediction)
 
 
 if __name__ == "__main__":

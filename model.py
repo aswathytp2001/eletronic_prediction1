@@ -17,7 +17,7 @@ df = pd.read_csv('mytable.csv')
 clf = LogisticRegression()
 
 # selected features
-selected_features= ['salary','Product']
+selected_features = ['salary', 'Product']
 
 X = df[selected_features]
 y = df['purchased']
@@ -38,4 +38,4 @@ my_pipeline = Pipeline(steps=[('preprocessor', preprocessor),
 
 my_pipeline.fit(X, y)
 
-pickle.dump(my_pipeline, open('saved.pkl','wb'))
+pickle.dump(my_pipeline, open('saved.pkl', 'wb'))
