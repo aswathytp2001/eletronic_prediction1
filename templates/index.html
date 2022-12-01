@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic product prediction </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" type="image/x-icon" href="static/image/heart-icon.webp">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <a href="/" class="logo"></i><b> ELECTRONIC STORE </b></a>
+
+        <nav class="navbar">
+<!--            <a href="#home">home</a>-->
+<!--            <a href="#book">predict</a>-->
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+
+
+
+    <section class="home" id="home">
+
+        <div class="image">
+            <img src="../static/image/shop.png" alt="">
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><B> About<span></span> Our Website<B/></h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="../static/image/about.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3><i>You buy perfect product</i></h3>
+                <p><i>Brands that take proactive steps to address customer concerns demonstrate customer centricity,
+                      which earns customer trust and builds relationships!</i></p>
+
+                <p><i>"..No longer is it good enough for companies to have the best product or the best service.
+                      To grow and succeed, companies must have the trust of their customers and stakeholders.."</i></p>
+<!--                <a href="#footer" class="btn"> Contact Us <span class="fas fa-chevron-right"></span> </a>-->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="book" id="book">
+
+        <h1 class="heading"> <span></span>PREDICTION</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="../static/image/main2.jpeg" alt="">
+            </div>
+
+            <form id="predictform" action="/predict" method="POST">
+                <h3>ENTER DETAILS</h3>
+
+<!--                <label for="Name">Name</label>-->
+<!--                <input type="text" name="Name" placeholder="Enter your Name" class="box" min=1>-->
+<!--                 <label for="Age">Age</label>-->
+<!--                <input type="number" name="Age" placeholder="Enter age" class="box" min=1>-->
+
+<!--                <label for="Sex">Sex</label>-->
+<!--                <select class="form-select box" name="Sex" aria-label="Default select example">-->
+<!--                    <option value="M">Male</option>-->
+<!--                    <option value="F">Female</option>-->
+<!--                </select>-->
+
+
+                </select>
+
+<!--                <label for="Employability">Employability</label>-->
+<!--                <select class="form-select box" name="Employability" aria-label="Default select example">-->
+<!--                    <option value=1 >student</option>-->
+<!--                    <option value=0 >Employee</option>-->
+<!--                </select>-->
+                <label for="Salary">salary</label>
+                <input type="number" name="Product" placeholder="Enter salary" class="box" min=1>
+
+                <label for="Product">Product</label>
+                <input type="text" name="Product" placeholder="Enter product " class="box" min=1>
+
+                </select>
+                <button class="btn"><B>PREDICT</B></button>
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+
+<!--    <section class="footer" id="footer">-->
+
+<!--        <div class="box-container">-->
+
+<!--            <div class="box">-->
+<!--                <h3>quick links</h3>-->
+<!--                <a href="/#home"> <i class="fas fa-chevron-right"></i> Home </a>-->
+
+<!--                <a href="/#book"> <i class="fas fa-chevron-right"></i> Predict Now </a>-->
+<!--                <a href="/#about"> <i class="fas fa-chevron-right"></i> About </a>-->
+<!--                -->
+<!--                -->
+<!--            </div>-->
+
+
+
+<!--            <div class="box">-->
+<!--                <h3>contact info</h3>-->
+<!--                <a href="/#footer"> <i class="fas fa-phone"></i> +91 9007309402 </a>-->
+<!--                <a href="/#footer"> <i class="fas fa-phone"></i> +91 9873235040 </a>-->
+<!--                <a href="https://prajapati.3@iitj.ac.in"> <i class="fas fa-envelope"></i> aswathy@gmail.com</a>-->
+<!--                <a href="https://jain.53@iitj.ac.in"> <i class="fas fa-envelope"></i> aswathy.com </a>-->
+<!--                <a href="https://iitj.ac.in/"> <i class="fas fa-map-marker-alt"></i> pala</a>-->
+<!--            </div>-->
+
+<!--            <div class="box">-->
+<!--                <h3>follow us</h3>-->
+<!--                -->
+<!--                <a href="https://www.linkedin.com/in/akshat-jain-103550201/?originalSubdomain=in"> <i class="fab fa-linkedin"></i> Aswathy </a>-->
+
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </section>-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        let menu = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+    </script>
+</body>
+
+
+</html>
